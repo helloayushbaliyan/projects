@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=" relative flex justify-center text-center">
+        <img class="w-full h-[100vh] object-cover brightness-50" src="images/pexels-ensar-18031082.jpg" alt="">
+        <div class="absolute text-white top-16 ">
+            <h1 class="text-[4rem]">we are comming soon</h1>
+            <h1 class="text-[4rem]" id="end-date">04 March 2024 10:00 PM</h1>
+            <div class="gap-4 flex justify-center mt-14 ">
+                <div class="">
+                    <input type="text" value="0" readonly
+                        class="time w-36 h-14 text-black text-3xl font-semibold outline-none rounded-2xl text-center"> <br>
+                    <label class="text-2xl " for="">Days</label>
+                </div>
+                <div class="">
+                    <input type="text" value="0" readonly
+                        class="time w-36 h-14 text-black text-3xl font-semibold outline-none rounded-2xl text-center"> <br>
+                    <label class="text-2xl" for="">Hours</label>
+                </div>
+                <div class="">
+                    <input type="text" value="0" readonly
+                        class="time w-36 h-14 text-black text-3xl font-semibold outline-none rounded-2xl text-center"> <br>
+                    <label class="text-2xl" for="">Minutes</label>
+                </div>
+                <div class="">
+                    <input type="text" value="0" readonlys
+                        class="time w-36 h-14 text-black text-3xl font-semibold outline-none rounded-2xl text-center"> <br>
+                    <label class="text-2xl" for="">seconds</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
