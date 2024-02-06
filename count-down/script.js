@@ -1,4 +1,4 @@
-let enddate = "03 February 2024 9:51 PM";
+let enddate = "07 February 2024 10:00 AM";
 let time = document.querySelectorAll(".time");  
 // here input is target
 document.querySelector("#end-date").innerText = enddate;
@@ -28,4 +28,5 @@ setInterval(
     () => {
         clock()
     }
+    ,1000
 )
