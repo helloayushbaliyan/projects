@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-slate-950">
+    <div class="grid place-content-center h-screen ">
+        <div class=" space-y-5 rounded-xl p-6 bg-slate-800 overflow-hidden">
+            <div class="search-bar relative">
+                <input placeholder="enter city nanme" value=""
+                    class="city-name capitalize w-full h-12 rounded-3xl outline-none text-2xl pl-6" type="text">
+                <div class="btn search-btn  absolute top-2 right-3 t ">
+                    <button><svg
+                            class="w-9 bg-slate-900 rounded-full p-1  h-9 hover:scale-125 transition-all duration-500 text-gray-800 dark:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                        </svg></button>
+                </div>
+            </div>
+            <div class="flex text-white justify-center flex-col w-full mx-auto text-center">
+                <div class="flex justify-center">
+                    <img class="image max-w-44 " src="images/clear.png" alt="">
+                </div>
+
+                <H1 class="temperature text-3xl">22°C</H1>
+                <H1 class="location-name capitalize text-5xl">New dELHI</H1>
+
+            </div>
+            <div class="grid grid-cols-2 gap-5 py-[3rem] text-white">
+                <div class="flex space-x-3">
+                    <div class="w-14"><img src="images/humidity.png" alt=""></div>
+                    <div class="text-3xl">
+                        <h1 class="humidity">55%</h1>
+                        <h1 >Humidity</h1>
+                    </div>
+                </div><div class="flex space-x-3">
+                    <div class="w-14"><img src="images/wind.png" alt=""></div>
+                    <div class="text-3xl">
+                        <h1 class="wind-speed">5.5 km/h</h1>
+                        <h1 >Wind Speed</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
