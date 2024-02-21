@@ -1,0 +1,36 @@
+ul li {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.6rem;
+    position: relative;
+
+}
+
+ul li::before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 2rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+ul li.list-i {
+    text-decoration: line-through;
+    text-decoration-color: black;
+
+}
+
+ul li.list-i::before {
+    background-image: url(tick.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ul li span {
+    position: absolute;
+    right: 1rem;
+
+}
