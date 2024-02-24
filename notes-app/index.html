@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<style>
+    .note-box{
+        position: relative;
+
+    }
+    .input-box {
+        max-width: 100%;
+        width: 100%;
+        max-height: 8rem;
+        height: 8rem;
+        overflow: scroll;
+        background-color: white;
+    }
+
+    .cross-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        border: 2px solid black;
+        background-color: red;
+    }
+    .transition{
+        transition: all 7s;
+        
+    }
+</style>
+
+<body class="bg-slate-950 ">
+    <div class=" capitalize  ">
+        <div class=" mt-20 mx-32">
+
+            <div class="text-white flex">
+                <lord-icon src="https://cdn.lordicon.com/yqiuuheo.json" trigger="hover" style="width:50px;height:50px">
+                </lord-icon>
+
+                <h1 class="text-4xl mt-2 ml-4"> NOTES</h1>
+            </div>
+            <button class="create-notes-btn text-white flex bg-blue-800 rounded-2xl mt-4 px-6">
+                <lord-icon src="https://cdn.lordicon.com/ylvuooxd.json" trigger="hover" style="width:50px;height:50px">
+                </lord-icon> <span class="ml-2 mt-3">Create Notes</span>
+            </button>
+            <div class="notes-container grid grid-cols-2 gap-4 mt-5 text-2xl">
+                <!-- <div class=" note-box mt-9 grid grid-cols-2 gap-4">
+                    <p contenteditable="true" class="input-box">
+                    </p>
+                    <button class="cross-btn"> x</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
