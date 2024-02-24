@@ -8,6 +8,9 @@ let weather = async () => {
 
     let name = input.value.toLowerCase()
 
+    if (name==="") {
+        alert("please enter city name")
+    }
     let url = `${baseurl}${name}&appid=c14ada2ad81a9e0a0dfe7e27378b4afa`
     let promis = await fetch(url)
     let respnse = await promis.json()
@@ -23,7 +26,6 @@ let weather = async () => {
     images.src = await `images/${respnse.weather[0].main}.png`
 
     let weatherscn = document.querySelector(".weather-scn").style.display = "block"
-
 
 }
 button.addEventListener("click", weather);
