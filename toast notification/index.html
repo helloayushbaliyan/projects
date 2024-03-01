@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style >
+        .toast {
+            background-color: white;
+            width: 20rem;
+            height: 6rem;
+            color: black;
+            border-radius: 0px;
+            border-radius: 0px;
+            box-shadow: 26px 26px 52px #d0d0d0,
+                -26px -26px 52px #f0f0f0;
+            padding: 2rem 1rem;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            display: flex;
+            position: relative;
+            transform: translateX(100%);
+            animation: slide 0.5s linear forwards;
+        }
+
+        .toast svg {
+            margin-right: 1rem;
+        }
+
+        .toast::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: green;
+            animation: shrink 5s ease-in;
+        }
+
+        .toast.error::after {
+            background-color: red;
+        }
+        .toast.invalid::after {
+            background-color: yellow;
+        }
+
+
+        @keyframes shrink {
+            100% {
+                width: 0;
+            }
+        }
+        @keyframes slide {
+           100%{
+            transform: translateX(0%);
+           }
+        }
+    </style>
+</head>
+
+<body class="scroll-smooth overflow-hidden">
+    <div class="flex justify-center mt-12  space-x-4 text-2xl ">
+        <input value="succes" readonly
+            class="toast-btn w-40 text-center bg-black cursor-pointer text-white hover:scale-110 capitalize transition-all duration-300 px-6 py-3">
+        <input value="error" readonly
+            class="toast-btn w-40 text-center bg-black cursor-pointer text-white hover:scale-110 capitalize transition-all duration-300 px-6 py-3">
+        <input value="invalid" readonly
+            class="toast-btn w-40 text-center bg-black cursor-pointer text-white hover:scale-110 capitalize transition-all duration-300 px-6 py-3">
+    </div>
+    <div class="toast-msg absolute bottom-5 right-5"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
