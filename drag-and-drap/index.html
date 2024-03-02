@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-950">
+    <div class="grid place-content-center h-screen ">
+        <div class="w-[40rem]   bg-white p-6 rounded-2xl">
+            <label for="input-file" id="drop-area"
+                class="flex p-2 justify-center flex-col bg-blue-50   border-dashed border-4 border-slate-400 rounded-2xl">
+                <input type="file" accept="image/*" id="input-file" hidden>
+                <div id="img-view" class="m-2 bg-cover bg-center h-[16rem] bg-no-repeat text-center space-y-7">
+                    <div class="flex justify-center">
+                        <img class="w-32 mix-blend-multiply" src="drag and drop.png" alt="">
+                    </div>
+                    <h1 class="capitalize text-2xl font-semibold">drag and drop click here <br> to uplode the image</h1>
+                    <h1 class="capitalize text-sm font-medium">upload only image from desktop</h1>
+                </div>
+            </label>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
