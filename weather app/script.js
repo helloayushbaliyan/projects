@@ -14,7 +14,6 @@ let weather = async () => {
     let url = `${baseurl}${name}&appid=c14ada2ad81a9e0a0dfe7e27378b4afa`
     let promis = await fetch(url)
     let respnse = await promis.json()
-    console.log(respnse);
 
     let temperature = document.querySelector(".temperature").innerHTML = `${Math.round(respnse.main.temp - 273.15)}°C`
     let humidity = document.querySelector(".humidity").innerHTML = `${respnse.main.humidity} %`
@@ -66,8 +65,6 @@ let autocomplete = (list) => {
     listel.id = "city-name-data"
 
     list.forEach((names) => {
-        // let listitems = document.createElement("li")
-        // listel.appendChild(listitems)
         let listitembtn = document.createElement("button")
         listitembtn.innerHTML = names
         listitembtn.addEventListener("click", oncitybuttonclick)

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #range-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 1rem;
+            border-radius: 1rem;
+            margin: 16px 0;
+            background-color: rgb(31, 41, 55);
+        }
+
+        #range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 3px solid rgb(32, 41, 55);
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950">
+    <div class="grid place-content-center h-screen ">
+        <div class="bg-slate-500 w-[23rem]  px-5 py-7">
+            <div class="flex justify-between">
+                <div class=" bg-white rounded-full p-1">
+                    <svg class="w-10 h-10 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m15 19-7-7 7-7" />
+                    </svg>
+                </div>
+                <div class=" bg-white rounded-full p-1">
+                    <svg class="w-10 h-10 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M5 7h14M5 12h14M5 17h14" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class=" flex space-y-5  justify-center flex-col  text-center mt-12  overflow-hidden">
+
+                <div class="flex justify-center">
+                    <img class="bg-slate-400 border-8 object-cover border-r-white w-40 rounded-full h-40" src="">
+                </div>
+                <div class="">
+                    <h1 class="text-white text-2xl font-semibold">Lorem, ipsum.</h1>
+                    <h2 class="text-white text-sm">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="flex justify-center">
+                    <audio controls id="audio-controls" src="Kaley-Sheshe---Addy-Nagar(PagalWorlld.Com).mp3"></audio>
+                </div>
+                <input id="range-slider" class="" type="range" value="0">
+            </div>
+            <div class="flex justify-center space-x-8 mt-5">
+                <div class=" bg-white rounded-full p-1">
+                    <svg class="w-12 h-12 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M7 6a1 1 0 0 1 2 0v4l6.4-4.8A1 1 0 0 1 17 6v12a1 1 0 0 1-1.6.8L9 14v4a1 1 0 1 1-2 0V6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </div>
+                <div class=" bg-white rounded-full p-1 scale-150">
+                    <svg id="ctrl-icon" class="w-12 h-12 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </div>
+                <div class=" bg-white rounded-full p-1">
+                    <svg class="w-12 h-12 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M17 6a1 1 0 1 0-2 0v4L8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8L15 14v4a1 1 0 1 0 2 0V6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
