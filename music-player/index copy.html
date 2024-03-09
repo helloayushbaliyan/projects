@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/44680ea216.js" crossorigin="anonymous"></script>
     <style>
         #range-slider {
             -webkit-appearance: none;
@@ -57,37 +58,19 @@
                     <h2 class="text-white text-sm">Lorem ipsum dolor sit amet.</h2>
                 </div>
                 <div class="flex justify-center">
-                    <audio controls id="audio-controls" src="Kaley-Sheshe---Addy-Nagar(PagalWorlld.Com).mp3"></audio>
+                    <audio  id="audio-controls" src="Kaley-Sheshe---Addy-Nagar(PagalWorlld.Com).mp3"></audio>
                 </div>
                 <input id="range-slider" class="" type="range" value="0">
             </div>
-            <div class="flex justify-center space-x-8 mt-5">
-                <div class=" bg-white rounded-full p-1">
-                    <svg class="w-12 h-12 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M7 6a1 1 0 0 1 2 0v4l6.4-4.8A1 1 0 0 1 17 6v12a1 1 0 0 1-1.6.8L9 14v4a1 1 0 1 1-2 0V6Z"
-                            clip-rule="evenodd" />
-                    </svg>
-
+            <div class="flex justify-around mt-6">
+                <div class=" ">
+                    <i class="fa-solid  fa-backward  bg-white  p-5 rounded-full"></i>
                 </div>
-                <div class=" bg-white rounded-full p-1 scale-150">
-                    <svg id="ctrl-icon" class="w-12 h-12 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
-                            clip-rule="evenodd" />
-                    </svg>
-
+                <div class=" ">
+                    <i id="ctrl-icon" class="fa-solid fa-play  scale-150 px-[22px]  bg-white p-5 rounded-full "></i>
                 </div>
-                <div class=" bg-white rounded-full p-1">
-                    <svg class="w-12 h-12 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M17 6a1 1 0 1 0-2 0v4L8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8L15 14v4a1 1 0 1 0 2 0V6Z"
-                            clip-rule="evenodd" />
-                    </svg>
-
+                <div class=" ">
+                    <i class="  fa-solid fa-forward  bg-white p-5 rounded-full"></i>
                 </div>
             </div>
         </div>
