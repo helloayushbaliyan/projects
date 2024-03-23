@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #outer {
+            border-radius: 50%;
+            background: linear-gradient(145deg, #cacaca, #f0f0f0);
+            box-shadow: 9px 9px 18px #c1c1c1,
+                -9px -9px 18px #ffffff;
+        }
+
+        #inner {
+            border-radius: 50%;
+            background: #e0e0e0;
+            box-shadow: inset 14px 14px 28px #c1c1c1,
+                inset -14px -14px 28px #ffffff;
+        }
+
+        circle {
+            fill: none;
+            width: 30rem;
+            height: 30rem;
+            stroke: url(#GradientColor);
+            stroke-dasharray: 472;
+            stroke-width: 20px;
+            stroke-dashoffset: 472;
+            animation: anim 2s linear forwards;
+        }
+        @keyframes anim {
+            100%{
+                stroke-dashoffset: 165;
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f0f0f0] transition-all duration-1000 flex max-w-full">
+    <div class="bg-color   w-full  transition-all duration-700  grid place-content-center h-screen">
+        <div id="outer" class="w-[160px] relative h-[160px] border-2 rounded-full  flex justify-center items-center">
+            <div id="inner"
+                class="w-[120px] h-[120px] border-2 rounded-full   text-3xl flex justify-center items-center">
+                <h1 class="number"></h1>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
